@@ -1,0 +1,25 @@
+{
+  "name": "catalogocharlesbronso",
+  "version": "1.0.0",
+  "description": "All Charles Bronsosn's movies",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renatotl/catalogoCharlesBronso.git"
+  },
+  "author": "Renato Tenório Lino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/renatotl/catalogoCharlesBronso/issues"
+  },
+  "homepage": "https://github.com/renatotl/catalogoCharlesBronso#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
+  }
+}
