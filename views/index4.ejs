@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Filmes</title>
+</head>
+<body id="body4">
+    
+    
+    <header id="header4">
+        <ul><li><a href="/"> <h2>Menu Principal</h2></a></li></ul>
+    </header>
+
+    <section id="cardss">
+        <!--section card  possível stylirizar-->
+        <% filmes.forEach((filme)=> { %>
+            <!--essa estrutura precisa ser fechada na emsma linha   <%  %>-->
+            <div class="cardd">
+                <!--possível stylirizar card por card-->
+                <!--o foreach vai criar várias div para separar em vários cardizinhos-->
+                <img id="tamanho2" src=" <%= filme.imagem %>" alt="">
+                <!-- essa sintex que pegamos links do JS esse sinal de = é porque é apresentado uma variável para acessar os itens de um OBJETO colocamos o PONTO-->
+                <h2>
+                    <%= filme.nome %>
+                </h2>
+                <p class="descricao">
+                    <%= filme.descricao %>
+                </p>
+                <p>Tipo: <%= filme.tipo %>
+                </p>
+                <p id="doId"> Id <%= filme.id %></p><!-- o sinal de igual foi essencial para funcionar-->
+                
+            </div>
+            <% }) %>
+                <!--precisamos dessa sintex para escrever em javaScript no thml-->
+    </section>
+    <!--FORMULÁRIO-->
+
+
+</body>
+</html>

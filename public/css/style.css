@@ -1,0 +1,270 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    
+   
+
+}
+nav h2{
+    color: aliceblue;
+    
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  
+  
+}
+
+nav ul li{
+ padding: .6rem;
+ 
+ 
+}
+
+nav ul li a{
+    padding: .6rem;
+    text-decoration: none;/* dessa forma foi possível remover o sublinhado*/
+    
+   }
+header img{
+    width: 100%;
+}
+
+#foto2{
+width: 100%;
+
+}
+
+#header2{
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    padding: .6rem;
+
+}
+
+#header2 a{
+    
+color: aliceblue;
+text-decoration: none;
+}
+#header2 a:hover{
+color: red;
+}
+
+
+#header2  h1{
+    color: aliceblue;
+
+}
+#header3{
+    position: fixed;
+    
+    text-align: center;
+    padding: .6rem;
+
+}
+
+#header3 a{
+    
+color: aliceblue;
+text-decoration: none;
+}
+#header3 a:hover{
+color: red;
+}
+
+#texto{
+    width: 50%;
+    padding-left: 1rem;
+}
+
+#header3  h1{
+    color: aliceblue;
+
+}
+#historia1{
+    width: 100%;
+}
+
+#cadastar{
+    width: 500px;
+    margin: auto;
+    position: relative;
+}
+
+#nome{
+    position: absolute;
+    top: 15rem;
+    
+    left: 6rem;
+}
+
+section#cadastrar div #label1{
+    position: absolute;
+    top: 15rem;
+    bottom: 21rem;
+    color: aliceblue;
+    left: 1rem;
+    
+}
+
+#Descrição{
+    position: absolute;
+    top: 17rem;
+    
+    left: 6rem;
+}
+
+section#cadastrar div #label2{
+    position: absolute;
+    top: 17rem;
+    
+    color: aliceblue;
+    left: 1rem;
+    
+}
+
+#tipo{
+    position: absolute;
+    top: 19rem;
+    
+    left: 6rem;
+}
+
+section#cadastrar div #label3{
+    position: absolute;
+    top: 19rem;
+    
+    color: aliceblue;
+    left: 1rem;
+}
+
+#imagem{
+    position: absolute;
+    top: 21rem;
+    
+    left: 6rem;
+}
+
+section#cadastrar div #label4{
+    position: absolute;
+    top: 21rem;
+    
+    color: aliceblue;
+    left: 1rem;
+}
+
+#btCadastrar{
+    position: absolute;
+    top: 23rem;
+    
+    left: 6rem;
+
+}
+
+#cf{
+    position: absolute;
+    top: 12rem;
+    left: 6rem;
+   color: aliceblue;
+}
+
+#texto{
+    position: absolute;
+align-items: flex-start;
+top: 12rem;
+color: aliceblue;
+text-align: left;
+
+}
+
+#historia1 img{
+    width: 100% ;
+    height: 100%;
+}
+
+section#cards{
+    display: flex;
+    justify-content: space-evenly; /* um espaço armonioso entre os itens  */
+    margin-top: 5rem;/* abaixa um pouco os cards do header */
+    flex-wrap: wrap;/* não deixa juntar muito os cards e joga pra baixo*/
+    position: absolute;
+    
+    
+}
+section#cards div.card{/*stylirizando o card */
+    width: 20rem;
+    box-shadow: 5px 5px 5px 5px   #00000020;
+    padding: 2rem;
+    
+}
+
+#tamanho{
+   width: 100%;
+
+}
+
+section#cardss{
+    display: flex;
+    justify-content: space-evenly; /* um espaço armonioso entre os itens  */
+    margin-top: 5rem;/* abaixa um pouco os cards do header */
+    flex-wrap: wrap;/* não deixa juntar muito os cards e joga pra baixo*/
+    position: absolute;
+    
+}
+section#cardss div.cardd{/*stylirizando o card */
+    width: 20rem;
+    box-shadow: 5px 5px 5px 5px   #00000020;
+    padding: 2rem;
+    color: aliceblue;
+}
+
+#tamanho2{
+    width: 100%;
+}
+
+
+
+#header4 a{
+color: aliceblue;
+text-decoration: none;
+width: 100%;
+    text-align: center;
+    padding: .6rem;
+    top: 1rem;
+}
+
+
+#header4 a:hover{
+color: red;
+}
+
+
+section#cards{
+position: relative;
+
+
+
+
+}
+
+#body4{
+    background-color: black;
+}
+
+section#cardss{
+    position: relative;
+    
+}
+
+
