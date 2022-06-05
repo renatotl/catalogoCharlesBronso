@@ -32,7 +32,8 @@
                 <p>Tipo: <%= filme.tipo %>
                 </p>
                 <p id="doId"> Id <%= filme.id %></p><!-- o sinal de igual foi essencial para funcionar-->
-                
+                <a id="apagar" href="/delete/<%=filme.id%>">Apagar</a>
+                <a id="editar" href="/novo/<%=filme.id%>">Editar</a>
             </div>
             <% }) %>
                 <!--precisamos dessa sintex para escrever em javaScript no thml-->

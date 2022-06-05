@@ -68,6 +68,11 @@ const filmes =[//um arrey de objetos
       
 
      })
+     app.get("/novo/:id", (req,res) =>{
+      res.render("index5", {})
+     
+
+    })
 
      // rota responável pela pg sobre o ator
      app.get("/sobre", (req,res) =>{
@@ -81,5 +86,48 @@ const filmes =[//um arrey de objetos
        
  
       })
+
+
+
+
+      app.get("/delete/:id", (req,res) => {
+        //pegando a posição do ID transformando ele em número e subtraindo 1
+        const id = +req.params.id -1;
+        
+        
+        delete filmes[id]
+        
+        
+        res.redirect("/#cardss");
+        
+        })
+
+
+//rota responsável por caastrar
+
+
+
+
+app.post("/update/:id", (req, res) =>{//:id estou enviando um parâmetro na rota update
+  const id = +req.params.id -1;
+  // o sinal de + no req é igual quando usado prompt
+ 
+ 
+     const newFilme = req.body;
+     newFilme.id = id + 1;
+ 
+     //achando a posição e está sendo add new Filme
+     filmes[id] = newFilme;
+ 
+ filme = undefined;
+ 
+    // não dá pra mandar ele denovo pro redirect
+    res.redirect("/#cards");
+ })
+ 
+
+
+      
+
 
 app.listen(port, () => console.log(`Servidor rodando em http://localhost:${port}`));//ouvindo a porta 3000, rodando nessa porta
