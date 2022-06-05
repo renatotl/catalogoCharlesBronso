@@ -69,8 +69,8 @@ const filmes =[//um arrey de objetos
 
      })
      app.get("/novo/:id", (req,res) =>{
-      res.render("index5", {})
-     
+      res.render("index5", {filmes,filme})
+      
 
     })
 
@@ -119,10 +119,10 @@ app.post("/update/:id", (req, res) =>{//:id estou enviando um parâmetro na rota
      //achando a posição e está sendo add new Filme
      filmes[id] = newFilme;
  
- filme = undefined;
+ 
  
     // não dá pra mandar ele denovo pro redirect
-    res.redirect("/#cards");
+    res.redirect("/");
  })
  
 
