@@ -71,7 +71,7 @@ const filmes =[//um arrey de objetos
      
      app.get("/novo/:id", (req,res) =>{
        filme = 1 // com essa variável entramos no atualizar filme
-           res.render("index2", {filme})
+           res.render("index2", {filmes,filme})
       filme = undefined // assim que renderizar a página já faço a variável voltar a undenined
       // se não entra em um lup infinito de atualização
        
