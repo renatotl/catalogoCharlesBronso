@@ -64,15 +64,20 @@ const filmes =[//um arrey de objetos
 
      //rota responsável por caastrar
      app.get("/cadastrar", (req,res) =>{
-       res.render("index2", {})
+       res.render("index2", {filme})
       
 
      })
+     
      app.get("/novo/:id", (req,res) =>{
-      res.render("index5", {filmes,filme})
-      
+       filme = 1 // com essa variável entramos no atualizar filme
+           res.render("index2", {filme})
+      filme = undefined // assim que renderizar a página já faço a variável voltar a undenined
+      // se não entra em um lup infinito de atualização
+       
 
     })
+
 
      // rota responável pela pg sobre o ator
      app.get("/sobre", (req,res) =>{
@@ -96,7 +101,7 @@ const filmes =[//um arrey de objetos
         
         
         delete filmes[id]
-        
+        filme = undefined;
         
         res.redirect("/#cardss");
         
@@ -118,12 +123,12 @@ app.post("/update/:id", (req, res) =>{//:id estou enviando um parâmetro na rota
  
      //achando a posição e está sendo add new Filme
      filmes[id] = newFilme;
- 
+     filme = undefined;
  
  
     // não dá pra mandar ele denovo pro redirect
     res.redirect("/");
- })
+ });
  
 
 
