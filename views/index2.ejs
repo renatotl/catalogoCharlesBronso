@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Cadastro</title>
 </head>
 
@@ -60,15 +60,17 @@
                         
                     </header>
                    
-                        <img id="foto2" src="img/escrivanilha2.jpg" alt="escrivanilha2">
+                        <img id="foto22" src="img/escrivanilha.jpg" alt="escrivanilha2">
                         
                             <!--se filme for undefined o if irá rodar o código de baixo-->
                             <h2 id="cf"> Atualizar Filme </h2>
                             <!-- 0 Action do form recebe as informações Esse atributo é o responsável por dizer para onde os dados serão enviados, ou seja, para qual rota no meu back-end esse dados vão, para que lá no back-end eles sejam tratados, esse tratamento pode ser, guarda-los em memoria temporária ou persistir esses dados em algum banco de dados. Nas próximas semanas vamos aprender essa persistência, por ora vamos armazenar em memória.-->
-                            <form id="formm" action="/update/<%= filme.id %>" method="POST">
+                            <form id="form" action="/update/<%= filme.id %>" method="POST">
                                 <!-- esse add manda a informação lá pro js-->
                                 <!--Esse atributo é responsável por dizer como nossos dados serão enviados para a rota determinada, existem duas formas de enviar esses dados, pelo método GET ou POST-->
-            
+                                 <h1>    
+                                    <%= filme.id %>
+                                 </h1>
                                 <div>
                                     <label id="label1" for="nome">Nome: </label>
                                     <input type="text" name="nome" id="nome" placeholder="Digite o nome do filme" value="<%= filme.nome %>" required>

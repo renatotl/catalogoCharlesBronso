@@ -69,8 +69,10 @@ const filmes =[//um arrey de objetos
 
      })
      
+     
      app.get("/novo/:id", (req,res) =>{
-       filme = 1 // com essa variável entramos no atualizar filme
+      let id = req.params.id// essa linha e a de baixo formam fundamentais
+       filme = filmes.find((filme) => filme.id ==id)  // linha de código fundamental 
            res.render("index2", {filmes,filme})
       filme = undefined // assim que renderizar a página já faço a variável voltar a undenined
       // se não entra em um lup infinito de atualização
