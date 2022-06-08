@@ -320,6 +320,79 @@ text-align: center;/*reponsável por deixar meu item alinhado no centro do foote
 
 
   #foto22{
-    width: 100%;
+  height: 100%;
+z-index: 9999;
   }
 
+  #btAtualizar{
+    position: absolute;
+    top: 23rem;
+    
+    left: 6rem;
+  }
+
+  #cff{
+    position: absolute;
+    top: 12rem;
+    left: 6rem;
+   color: rgb(7, 7, 7);
+}
+
+
+
+ #label11{
+    position: absolute;
+    top: 15rem;
+    bottom: 21rem;
+    color: rgb(3, 3, 3);
+    left: 1rem;
+    
+}
+
+#label22{
+    position: absolute;
+    top: 17rem;
+    
+    color: rgb(8, 8, 8);
+    left: 1rem;
+    
+}
+
+#label33{
+    position: absolute;
+    top: 19rem;
+    
+    color: rgb(5, 5, 5);
+    left: 1rem;
+}
+
+#label44{
+    position: absolute;
+    top: 21rem;
+    
+    color: rgb(2, 2, 2);
+    left: 1rem;
+}
+
+#header22{
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    padding: .6rem;
+
+}
+
+#header22 a{
+    
+color: rgb(5, 5, 5);
+text-decoration: none;
+}
+#header22 a:hover{
+color: red;
+}
+
+
+#header22  h1{
+    color: rgb(5, 5, 5);
+
+}
